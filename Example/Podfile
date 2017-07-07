@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'FSDoubleLineGraph_Example' do
+  pod 'FSDoubleLineGraph', :path => '../'
+
+  target 'FSDoubleLineGraph_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+  end
+end

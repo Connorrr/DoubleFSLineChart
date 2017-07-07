@@ -23,6 +23,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BF3FE58C1F0F22EC00C06538 /* FSLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FE58B1F0F22EC00C06538 /* FSLineChart.m */; };
+		BF3FE5901F0F233500C06538 /* UIColor+FSPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FE58F1F0F233500C06538 /* UIColor+FSPalette.m */; };
 		FA7094B0FF4439769EA4698A /* Pods_FSDoubleLineGraph_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E68A8411F07041AF79CAC22F /* Pods_FSDoubleLineGraph_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C6ECDAF87CF090138F12420 /* FSDoubleLineGraph.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FSDoubleLineGraph.podspec; path = ../FSDoubleLineGraph.podspec; sourceTree = "<group>"; };
-		32DF9AF5FE88B3BC830C960F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0C6ECDAF87CF090138F12420 /* FSDoubleLineGraph.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FSDoubleLineGraph.podspec; path = ../FSDoubleLineGraph.podspec; sourceTree = "<group>"; };
+		32DF9AF5FE88B3BC830C960F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FSDoubleLineGraph_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FSDoubleLineGraph_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,7 +66,11 @@
 		9C9C7F4E5847963EAF0123D0 /* Pods-FSDoubleLineGraph_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSDoubleLineGraph_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FSDoubleLineGraph_Example/Pods-FSDoubleLineGraph_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A209B5CA4302BB2DDAB3926C /* Pods-FSDoubleLineGraph_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSDoubleLineGraph_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-FSDoubleLineGraph_Example/Pods-FSDoubleLineGraph_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B04560986A97EB74301829A9 /* Pods-FSDoubleLineGraph_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FSDoubleLineGraph_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FSDoubleLineGraph_Tests/Pods-FSDoubleLineGraph_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E31778A1182C3886A7F27BAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		BF3FE58B1F0F22EC00C06538 /* FSLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSLineChart.m; path = ../../FSDoubleLineGraph/Classes/FSLineChart.m; sourceTree = "<group>"; };
+		BF3FE58D1F0F22F800C06538 /* FSLineChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FSLineChart.h; path = ../../FSDoubleLineGraph/Classes/FSLineChart.h; sourceTree = "<group>"; };
+		BF3FE58E1F0F233000C06538 /* UIColor+FSPalette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIColor+FSPalette.h"; path = "../../FSDoubleLineGraph/Classes/UIColor+FSPalette.h"; sourceTree = "<group>"; };
+		BF3FE58F1F0F233500C06538 /* UIColor+FSPalette.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+FSPalette.m"; path = "../../FSDoubleLineGraph/Classes/UIColor+FSPalette.m"; sourceTree = "<group>"; };
+		E31778A1182C3886A7F27BAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E68A8411F07041AF79CAC22F /* Pods_FSDoubleLineGraph_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSDoubleLineGraph_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F220FC74852B82F3596EA614 /* Pods_FSDoubleLineGraph_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FSDoubleLineGraph_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,6 +168,10 @@
 				6003F595195388D20070C39A /* FSDoubleLineGraph-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
+				BF3FE58D1F0F22F800C06538 /* FSLineChart.h */,
+				BF3FE58E1F0F233000C06538 /* UIColor+FSPalette.h */,
+				BF3FE58B1F0F22EC00C06538 /* FSLineChart.m */,
+				BF3FE58F1F0F233500C06538 /* UIColor+FSPalette.m */,
 				6003F59B195388D20070C39A /* FSDoubleLineGraph-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -250,6 +260,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Connorrr;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = HTSF3MHP5C;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -397,6 +410,8 @@
 				6003F59E195388D20070C39A /* FSLineDoubleAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* FSLineDoubleViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				BF3FE58C1F0F22EC00C06538 /* FSLineChart.m in Sources */,
+				BF3FE5901F0F233500C06538 /* UIColor+FSPalette.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +539,7 @@
 			baseConfigurationReference = 9C9C7F4E5847963EAF0123D0 /* Pods-FSDoubleLineGraph_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HTSF3MHP5C;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FSDoubleLineGraph/FSDoubleLineGraph-Prefix.pch";
 				INFOPLIST_FILE = "FSDoubleLineGraph/FSDoubleLineGraph-Info.plist";
@@ -539,6 +555,7 @@
 			baseConfigurationReference = A209B5CA4302BB2DDAB3926C /* Pods-FSDoubleLineGraph_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HTSF3MHP5C;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FSDoubleLineGraph/FSDoubleLineGraph-Prefix.pch";
 				INFOPLIST_FILE = "FSDoubleLineGraph/FSDoubleLineGraph-Info.plist";

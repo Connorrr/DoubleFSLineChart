@@ -1,0 +1,6 @@
+framework module Pods_FSDoubleLineGraph_Tests {
+  umbrella header "Pods-FSDoubleLineGraph_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

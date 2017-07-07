@@ -1,0 +1,22 @@
+{
+  "name": "FSDoubleLineGraph",
+  "version": "0.1.0",
+  "summary": "A short description of FSDoubleLineGraph.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Connorrr/FSDoubleLineGraph",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Connorrr": "connor.reid87@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Connorrr/FSDoubleLineGraph.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FSDoubleLineGraph/Classes/**/*"
+}

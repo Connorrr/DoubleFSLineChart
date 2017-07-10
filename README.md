@@ -26,4 +26,4 @@ Connorrr, connor.reid87@gmail.com
 
 ## License
 
-FSDoubleLineGraph is available under the MIT license. See the LICENSE file for more info.
+FSDoubleLineGraph is available under the Apache 2 license. See the LICENSE file for more info.

@@ -24,6 +24,9 @@ pod "FSDoubleLineGraph"
 
 Connorrr, connor.reid87@gmail.com
 
+## Notes
+This project is an update from https://github.com/ArthurGuibert/FSLineChart.  It allows a second data set to be plotted on the same graph. 
+
 ## License
 
 FSDoubleLineGraph is available under the Apache 2 license. See the LICENSE file for more info.

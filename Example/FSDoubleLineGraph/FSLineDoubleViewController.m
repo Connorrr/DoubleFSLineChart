@@ -18,7 +18,7 @@
 
 @implementation FSLineDoubleViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad { 
     [super viewDidLoad];
     [self loadChartWithDates];
 }

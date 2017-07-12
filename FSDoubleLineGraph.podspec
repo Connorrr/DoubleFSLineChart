@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FSDoubleLineGraph'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Addition to FSLineChart repo with htability to plot two lines on one graph.'
 
 # This description is used to generate tags and improve search results.

@@ -678,7 +678,12 @@
     if(_data.count < 2) {
         return CGPointMake(_margin, _axisHeight + _margin - [number floatValue] * scale);
     } else {
-        return CGPointMake(_margin + idx * (_axisWidth / (_data.count + shift - 1)), _axisHeight + _margin - [number floatValue] * scale);
+        if (_xPos){
+            NSNumber* xPos = _xPos[idx];
+            return CGPointMake(_margin + ([xPos floatValue] + shift) * (_axisWidth / (_data.count + shift - 1)), _axisHeight + _margin - [number floatValue] * scale);
+        }else{
+            return CGPointMake(_margin + (idx + shift) * (_axisWidth / (_data.count + shift - 1)), _axisHeight + _margin - [number floatValue] * scale);
+        }
     }
 }
 

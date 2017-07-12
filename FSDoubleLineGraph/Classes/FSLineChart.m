@@ -190,7 +190,7 @@
     }
     
     if (xPos == nil || xPos.count == 0) {
-        NSLog(@"This initalizer function uses a secod set of data to set the x positions for the chart data.  Please include a second array the same size as the chartData filled with x posotion numbers for each data point or use the setChartData initializer.");
+        NSLog(@"This initalizer function uses a second set of data to set the x positions for the chart data.  Please include a second array the same size as the chartData filled with x posotion numbers for each data point or use the setChartData initializer.");
         return;
     }
     
@@ -219,6 +219,48 @@
     
     [self layoutChart];
     
+}
+
+- (void)setTwoChartDataSetsWithXPos: (NSArray *)chartData second: (NSArray *)secondChartData xPos: (NSArray *)xPos secondXPos: (NSArray *)secondXPos{
+    if (chartData == nil || chartData.count == 0) {
+        NSLog(@"Need an array of numbers for the chart data");
+        return;
+    }
+    
+    if (xPos == nil || xPos.count == 0) {
+        NSLog(@"This initalizer function uses a second set of data to set the x positions for the chart data.  Please include a second array the same size as the chartData filled with x posotion numbers for each data point or use the setChartData initializer.");
+        return;
+    }
+    
+    if (xPos.count != chartData.count){
+        NSLog(@"chartData and xPos must be arrays of the same size.");
+        return;
+    }
+    
+    if (secondChartData == nil || secondChartData.count == 0) {
+        NSLog(@"Need an array of numbers for the second set of chart data");
+        return;
+    }
+    
+    if (secondXPos == nil || secondXPos.count == 0) {
+        NSLog(@"This initalizer function uses a second set of data to set the x positions for the chart's second data set.  Please include a second array the same size as the secondChartData filled with x posotion numbers for each data point or use the setChartData initializer.");
+        return;
+    }
+    
+    if (secondXPos.count != secondChartData.count){
+        NSLog(@"secondChartData and secondXPos must be arrays of the same size.");
+        return;
+    }
+    
+    _data = [NSMutableArray arrayWithArray:chartData];
+    
+    _secondData = [NSMutableArray arrayWithArray:secondChartData];
+    
+    _xPos = [NSMutableArray arrayWithArray:xPos];
+    
+    _xPos2 = [NSMutableArray arrayWithArray:secondXPos];
+    
+    [self layoutChart];
 }
 
 #pragma mark - Labels creation

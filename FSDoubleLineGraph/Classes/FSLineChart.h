@@ -101,6 +101,9 @@ typedef NS_ENUM(NSInteger, ValueLabelPositionType) {
 // Set the chart with two data sets and render them both to the view
 - (void)setTwoChartDataSets: (NSArray *)chartData second: (NSArray *)secondChartData;
 
+// Set the chart with two data sets and two x position arrays and render them both to the view
+- (void)setTwoChartDataSetsWithXPos: (NSArray *)chartData second: (NSArray *)secondChartData xPos: (NSArray *)xPos secondXPos: (NSArray *)secondXPos;
+
 // Clear all rendered data from the view.
 - (void)clearChartData;
 

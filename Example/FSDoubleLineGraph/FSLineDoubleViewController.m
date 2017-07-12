@@ -38,6 +38,8 @@
     
     NSArray* xPos = [NSArray arrayWithObjects:[NSNumber numberWithFloat:0], [NSNumber numberWithFloat:0.7],[NSNumber numberWithFloat:1.7],[NSNumber numberWithFloat:3.5],[NSNumber numberWithFloat:4.2], nil];
     
+    NSArray* xPos2 = [NSArray arrayWithObjects:[NSNumber numberWithFloat:0.5], [NSNumber numberWithFloat:0.8],[NSNumber numberWithFloat:1.7],[NSNumber numberWithFloat:3.1],[NSNumber numberWithFloat:4.0], nil];
+    
     
     NSArray* months = @[@"January", @"February", @"March", @"April", @"May", @"June", @"July"];
     
@@ -71,7 +73,10 @@
     
     //[_chartWithDates setTwoChartDataSets:chartData second:twoDData];
     
-    [_chartWithDates setChartDataWithXPos:chartData xPos:xPos];
+    //[_chartWithDates setChartDataWithXPos:chartData xPos:xPos];
+    
+    [_chartWithDates setTwoChartDataSetsWithXPos:chartData second:twoDData xPos:xPos secondXPos:xPos2];
+    
     
 }
 

@@ -36,6 +36,9 @@
         twoDData[i] = [NSNumber numberWithFloat: (float)i / 30.0f + (float)(rand() % 100) / 500.0f];
     }
     
+    NSArray* xPos = [NSArray arrayWithObjects:[NSNumber numberWithFloat:0], [NSNumber numberWithFloat:0.7],[NSNumber numberWithFloat:1.7],[NSNumber numberWithFloat:3.5],[NSNumber numberWithFloat:4.2], nil];
+    
+    
     NSArray* months = @[@"January", @"February", @"March", @"April", @"May", @"June", @"July"];
     
     
@@ -66,7 +69,9 @@
     
     //[_chartWithDates setChartData:chartData];
     
-    [_chartWithDates setTwoChartDataSets:chartData second:twoDData];
+    //[_chartWithDates setTwoChartDataSets:chartData second:twoDData];
+    
+    [_chartWithDates setChartDataWithXPos:chartData xPos:xPos];
     
 }
 

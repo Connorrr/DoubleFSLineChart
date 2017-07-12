@@ -217,10 +217,6 @@
     
     _secondData = [NSMutableArray arrayWithArray:secondChartData];
     
-    NSLog(@"First:  %@", _data);
-    
-    NSLog(@"First:  %@", _secondData);
-    
     [self layoutChart];
     
 }

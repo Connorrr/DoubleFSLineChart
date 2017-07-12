@@ -27,6 +27,8 @@
 
 @property (nonatomic, strong) NSMutableArray* data;
 @property (nonatomic, strong) NSMutableArray* secondData;
+@property (nonatomic, strong) NSMutableArray* xPos;
+@property (nonatomic, strong) NSMutableArray* xPos2;
 @property (nonatomic, strong) NSMutableArray* layers;
 
 @property (nonatomic) CGFloat min;
@@ -173,6 +175,26 @@
     if (chartData == nil || chartData.count == 0) {
         return;
     }
+    
+    _data = [NSMutableArray arrayWithArray:chartData];
+    
+    [self layoutChart];
+    
+}
+
+- (void)setChartDataWithXPos:(NSArray *)chartData xPos: (NSArray *)xPos
+{
+    if (chartData == nil || chartData.count == 0) {
+        NSLog(@"Need an array of numbers for the chart data");
+        return;
+    }
+    
+    if (xPos == nil || xPos.count == 0) {
+        NSLog(@"This initalizer function uses a secod set of data to set the x positions for the chart data.  Please include a second array the same size as the chartData filled with x posotion numbers for each data point or use the setChartData initializer.");
+        return;
+    }
+    
+    _xPos = [NSMutableArray arrayWithArray:xPos];
     
     _data = [NSMutableArray arrayWithArray:chartData];
     

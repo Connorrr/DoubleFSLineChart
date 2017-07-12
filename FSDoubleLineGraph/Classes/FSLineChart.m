@@ -194,6 +194,11 @@
         return;
     }
     
+    if (xPos.count != chartData.count){
+        NSLog(@"chartData and xPos must be arrays of the same size.");
+        return;
+    }
+    
     _xPos = [NSMutableArray arrayWithArray:xPos];
     
     _data = [NSMutableArray arrayWithArray:chartData];

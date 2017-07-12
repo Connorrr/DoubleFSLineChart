@@ -713,15 +713,17 @@
     // Compute the point position in the view from the data with a set scale value
     NSNumber* number = _data[idx];
     
+    //  Compute the x position for each data point
+    NSNumber* xPos = [NSNumber numberWithUnsignedInteger:idx];
+    
+    if (_xPos){
+        xPos = _xPos[idx];
+    }
+    
     if(_data.count < 2) {
-        return CGPointMake(_margin, _axisHeight + _margin - [number floatValue] * scale);
+        return CGPointMake(_margin + [xPos floatValue], _axisHeight + _margin - [number floatValue] * scale);
     } else {
-        if (_xPos){
-            NSNumber* xPos = _xPos[idx];
-            return CGPointMake(_margin + ([xPos floatValue] + shift) * (_axisWidth / (_data.count + shift - 1)), _axisHeight + _margin - [number floatValue] * scale);
-        }else{
-            return CGPointMake(_margin + (idx + shift) * (_axisWidth / (_data.count + shift - 1)), _axisHeight + _margin - [number floatValue] * scale);
-        }
+        return CGPointMake(_margin + ([xPos floatValue] + shift) * (_axisWidth / (_data.count + shift - 1)), _axisHeight + _margin - [number floatValue] * scale);
     }
 }
 
@@ -739,10 +741,17 @@
     // Compute the point position in the view from the data with a set scale value
     NSNumber* number = _secondData[idx];
     
+    //  Compute the x position for each data point
+    NSNumber* xPos = [NSNumber numberWithUnsignedInteger:idx];
+    
+    if (_xPos2){
+        xPos = _xPos2[idx];
+    }
+    
     if(_secondData.count < 2) {
-        return CGPointMake(_margin, _axisHeight + _margin - [number floatValue] * scale);
+        return CGPointMake(_margin + [xPos floatValue], _axisHeight + _margin - [number floatValue] * scale);
     } else {
-        return CGPointMake(_margin + (idx + shift) * (_axisWidth / (_secondData.count + shift - 1)), _axisHeight + _margin - [number floatValue] * scale);
+        return CGPointMake(_margin + ([xPos floatValue] + shift) * (_axisWidth / (_secondData.count + shift - 1)), _axisHeight + _margin - [number floatValue] * scale);
     }
 }
 
